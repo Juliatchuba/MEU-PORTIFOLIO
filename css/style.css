@@ -3,6 +3,7 @@
  configurações gerais
                      ♥*/
 
+
  * {
     margin: 0;
     padding: 0;
@@ -22,13 +23,15 @@ a {
     color: inherit;
 }
 
-section{
+section {
     padding: 100px 8%;
 }
+
 
 /*♥
    MENU
                    ♥*/
+
 
 header {
     position: fixed;
@@ -43,7 +46,7 @@ header {
     border-bottom: 1px solid #2c2633;
 }                   
 
-.menu{
+.menu {
     height: 70px;
 
     display: flex;
@@ -53,7 +56,7 @@ header {
     padding: 0 8%;
 }
 
-.logo{
+.logo {
     font-size: 24px;
     font-weight: bold;
 
@@ -76,9 +79,263 @@ header {
     color: #c084fc;
 }
 
+
 /*♥
    INICIO
                    ♥*/
 
-                   
 
+.inicio {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background: 
+         radial-gradient(
+            circle at 80% 50%,
+            rgba(168, 85, 247, 0.18),
+            transparent 35%
+         );
+}        
+
+.inicio-texto {
+    max-width: 650px;
+}
+
+.saudacao {
+    color: #c084fc;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inicio h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.incio h2 {
+    color: #d8b4fe;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.inicio-texto > p:not(.saudacao){
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+};
+
+ .botao { 
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    background-color: #a855f7;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-4px);
+    background-color: #c084fc;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 1px solid #a855f7;
+}
+
+
+/*♥FOTO♥*/
+
+
+.inicio-foto {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-container {
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    padding: 8px;
+    background: linear-gradient(
+      135deg,
+      #c084fc,
+      #581c87
+);
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #0d0b10;
+}
+
+
+/*♥ Animação da foto ♥*/
+
+
+@keyframes flutuar {
+    0%{
+        transform: translateY(0)
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+
+/*♥ TITULOS ♥*/
+
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo-secao p {
+    color: #c084fc;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.titulo-secao h2 {
+    font-size: 42px;
+    margin-top: 10px;
+}
+
+
+/*♥ Sobre ♥*/
+
+
+.sobre{
+    background-color: #141117;
+}
+
+.sobre-conteudo {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.sobre-texto p {
+    color: #bbb;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+.informacoes {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.info-card {
+    background-color: #1c1821;
+
+    padding: 25px;
+
+    border: 1px solid #302938;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+}
+
+.info-card span {
+    font-size: 28px;
+}
+
+.info-card h3 {
+    margin: 15px 0 8px;
+}
+
+.info-card p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/*♥ SKILLS ♥*/
+
+
+.tecnologias{
+    margin-top: 70px;
+}
+
+.tecnologias h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.skills {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+.skill {
+    padding: 12px 25px;
+
+    border: 1px solid #a855f7;
+
+    border-radius: 30px;
+
+    color: #d8b4fe;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #a855f7;
+
+    color: white;
+
+    transform: scale(1.05);
+
+}
