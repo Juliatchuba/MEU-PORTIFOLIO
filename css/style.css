@@ -41,5 +41,44 @@ header {
     backdrop-filter:  blur(10px);
 
     border-bottom: 1px solid #2c2633;
-
 }                   
+
+.menu{
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #c084fc;
+}
+
+.menu ul { 
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.menu a {
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c084fc;
+}
+
+/*♥
+   INICIO
+                   ♥*/
+
+                   
+
