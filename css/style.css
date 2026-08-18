@@ -1,8 +1,6 @@
 
-/*♥
- configurações gerais
-                     ♥*/
 
+/*♥ configurações geraiS ♥*/
 
  * {
     margin: 0;
@@ -15,7 +13,6 @@ body {
     background-color: #0d0b10;
     color: #ffffff;
     font-family:Georgia, serif;
-
 }
 
 a { 
@@ -28,9 +25,7 @@ section {
 }
 
 
-/*♥
-   MENU
-                   ♥*/
+  /*♥ MENU ♥*/
 
 
 header {
@@ -80,9 +75,8 @@ header {
 }
 
 
-/*♥
-   INICIO
-                   ♥*/
+
+ /*♥ INICIO ♥*/
 
 
 .inicio {
@@ -112,7 +106,7 @@ header {
     margin-bottom: 10px;
 }
 
-.inicio h1{
+.inicio h1 {
     font-size: 70px;
     margin-bottom: 10px;
 }
@@ -158,7 +152,7 @@ header {
 }
 
 
-/*♥FOTO♥*/
+/*♥ FOTO ♥*/
 
 
 .inicio-foto {
@@ -301,7 +295,7 @@ header {
 /*♥ SKILLS ♥*/
 
 
-.tecnologias{
+.tecnologias {
     margin-top: 70px;
 }
 
@@ -339,3 +333,261 @@ header {
     transform: scale(1.05);
 
 }
+
+
+/* EXMPERIÊNCIA */
+
+
+.timeline {
+    max-width: 100px;
+
+    margin: auto;
+}
+
+.experiencia-card {
+    background-color: #141117;
+
+    border-left: 3px solid #a855f7;
+
+    padding: 30px;
+
+    margin-bottom: 24px;
+
+    border-radius: 0 10px 10px 0;
+
+    transition: 0.3s;
+}
+
+.experiencia-card:hover {
+    transform: translateX(8px);
+}
+
+.ano {
+    color: #c084fc;
+
+    font-weight: bold;
+}
+
+.experiencia-card h3 {
+    margin: 10px 0;
+}
+
+.experiencia-card h4 {
+    color: #999;
+
+    margin-bottom: 15px;
+}
+
+.experiencia-card p {
+    color: #aaa;
+
+    line-height: 1.6;
+}
+
+
+/*♥ CERTIFICADOS ♥*/
+
+
+.certificados {
+    background-color: #141117;
+}
+
+.certificados-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.certificados-card {
+    background-color: #1c1821;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #302938;
+
+    transition: 0.3s;
+}
+
+.certificados-card:hover {
+    transform: translate(-10px);
+
+    border-color: #a855f7;
+}
+
+.certificado-icone {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.certificados-card button {
+    background-color: #a855f7;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.certificados-card button:hover {
+    background-color: #c084fc;
+}
+
+
+/*♥ PROJETOS ♥*/
+
+
+.projeto-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.projeto-card {
+    background-color: #141117;
+
+    border: 1px solid #302938;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #a855f7;
+}
+
+.projeto-imgagem {
+    height: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 70px;
+
+    background-color: #1c1821;
+}
+
+.projeto-conteudo {
+    padding: 25px;
+}
+
+.projeto-conteudo p {
+    color: #999;
+
+    margin: 15px 0;
+}
+
+.tecnologia-projeto {
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.tecnologia-projeto span {
+    background-color: #2b2133;
+
+    color: #d8b4fe;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+.projeto-conteudo a {
+    color: #c084fc;
+}
+
+
+/*♥ CONTATO ♥*/
+
+.contato {
+    background-color: #141117;
+}
+
+.contato-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.contato-card {
+    width: 180px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: #1c1821;
+
+    border: 1px solid #302938;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.contato-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #a855f7;
+
+    color: #c084fc;
+}
+
+
+/*♥ RODOPÉ ♥*/
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+
+    background-color: #09070b;
+}
+
+
+/*♥ BOTÃO TOPO ♥*/
+
+
+
+
+
+
+
