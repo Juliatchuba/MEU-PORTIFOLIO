@@ -352,7 +352,7 @@ header {
 
     padding: 30px;
 
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 
     border-radius: 0 10px 10px 0;
 
@@ -390,62 +390,35 @@ header {
 
 
 .certificados {
-    background-color: #141117;
+    background-color: #0d0b10;
+}
+
+.certificado-info {
+    display: block;
+
+    margin-top: 30px;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+.certificado-info span {
+    display: block;
+
+    margin-top: 0px;
+
+    color: white;
+
+    font-size: 16px;
 }
 
 .certificados-container {
-
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
-}
-
-.certificados-card {
-    background-color: #1c1821;
-
-    padding: 35px;
-
-    border-radius: 15px;
-
-    text-align: center;
-
-    border: 1px solid #302938;
-
-    transition: 0.3s;
-}
-
-.certificados-card:hover {
-    transform: translate(-10px);
-
-    border-color: #a855f7;
-}
-
-.certificado-icone {
-    font-size: 45px;
-
-    margin-bottom: 20px;
-}
-
-.certificados-card button {
-    background-color: #a855f7;
-
-    color: white;
-
-    border: none;
-
-    padding: 10px 20px;
-
-    border-radius: 7px;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.certificados-card button:hover {
-    background-color: #c084fc;
 }
 
 
@@ -477,7 +450,7 @@ header {
 }
 
 .projeto-imgagem {
-    height: 100px;
+    height: 180px;
 
     display: flex;
 
@@ -623,7 +596,7 @@ footer {
 }
 
 
-/*RESPONSIVIDADE*/
+/*♥ RESPONSIVIDADE ♥*/
 
 
 @media (max-width: 900px) {
