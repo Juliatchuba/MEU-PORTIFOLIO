@@ -586,7 +586,104 @@ footer {
 /*♥ BOTÃO TOPO ♥*/
 
 
+#btnTopo {
+    position: fixed;
 
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #a855f7;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    display: none;
+
+    transition: 0.3s;
+}
+
+#btnTopo:hover {
+    background-color: #c084fc;
+
+    transform: translateY(-4px);
+}
+
+
+/*RESPONSIVIDADE*/
+
+
+@media (max-width: 900px) {
+
+    .menu ul {
+        display: none;
+    }
+
+    .inicio {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 130px;
+    }
+
+    .inicio h1 {
+        font-size: 50px;
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .certificados-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    section{
+        padding: 80px 5%;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .inicio h2 {
+        font-size: 20px;
+    }
+
+    .foto-container {
+        width: 230px;
+        height: 230px;
+    }
+
+    .informacoes{
+        grid-template-columns: 1fr;
+    }
+    
+}
 
 
 
