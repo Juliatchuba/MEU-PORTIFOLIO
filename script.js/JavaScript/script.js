@@ -24,9 +24,3 @@ function voltarAoTopo() {
     });
 }
 
-
-// CERTIFICADO //
-
-function abrirCertificado() {
-    alert("Aqui vamos colocar o seu certificado!");
-}

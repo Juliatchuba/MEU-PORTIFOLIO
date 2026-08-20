@@ -111,7 +111,7 @@ header {
     margin-bottom: 10px;
 }
 
-.incio h2 {
+.inicio h2 {
     color: #d8b4fe;
     font-size: 28px;
     margin-bottom: 25px;
@@ -127,7 +127,7 @@ header {
     display: flex;
     gap: 15px;
     margin-top: 35px;
-};
+}
 
  .botao { 
     padding: 14px 25px;
@@ -146,10 +146,23 @@ header {
     background-color: #c084fc;
 }
 
-.botao-secundario {
-    background-color: transparent;
-    border: 1px solid #a855f7;
+.botao-secundario:hover {
+    transform: translateY(-4px);
+    background-color: #c084fc;
 }
+
+.botao-secundario {
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    background-color: #a855f7;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
 
 
 /*♥ FOTO ♥*/
@@ -393,39 +406,49 @@ header {
     background-color: #0d0b10;
 }
 
-.certificado-info {
-    display: block;
-
-    margin-top: 30px;
-
-    color: white;
-
-    font-size: 16px;
-}
-
 .certificado-info span {
     display: block;
 
     margin-top: 0px;
 
-    color: white;
+    color: rgb(192, 101, 228);
 
     font-size: 16px;
 }
 
+/* Principal */
 .certificados-container {
     display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
+    /* Divide em colunas automáticas de no mínimo 400px cada */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 10px;
 }
 
+/* Dentro */
+.certificado-info {
+    display: block;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1); /* Um fundo leve para destacar, opcional */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.certificado-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.certificado-card {
+   border-radius: 120px;
+    padding: 200px;
+}
 
 /*♥ PROJETOS ♥*/
 
 
-.projeto-container {
+.projetos-container {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
@@ -449,8 +472,8 @@ header {
     border-color: #a855f7;
 }
 
-.projeto-imgagem {
-    height: 180px;
+.projeto-imagem {
+    height: 100px;
 
     display: flex;
 
@@ -629,7 +652,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .projeto-container {
+    .projetos-container {
         grid-template-columns: 1fr;
     }
 
